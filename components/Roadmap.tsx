@@ -1,5 +1,6 @@
 import { FC } from "react";
-import Image from "next/image";
+import Dot from "./Timeline/Dot";
+import Legend from "./Timeline/Legend";
 
 const Roadmap: FC = ({ children }) => {
   return (
@@ -30,8 +31,8 @@ const Roadmap: FC = ({ children }) => {
       </div>
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto">
-          <h2 className="mb-6 text-4xl font-bold font-heading text-gray-100">
-            The roadmap
+          <h2 className="mb-6 text-4xl md:text-5xl font-bold font-bifur text-gray-100">
+            Sales roadmap
           </h2>
           <p className="mb-6 text-lg text-gray-100 font-semibold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris
@@ -43,90 +44,38 @@ const Roadmap: FC = ({ children }) => {
             vulputate in elit vitae, malesuada fermentum justo.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
-          <div className="w-full lg:w-1/2 p-4">
-            <div className="relative py-16 px-6 md:px-20 bg-gray-800">
-              <span className="absolute top-0 left-0 flex w-20 h-12 pl-6 items-center clip-path-right-top bg-yellow-500 text-2xl text-gray-800 font-bold">
-                1
-              </span>
-              <h3 className="mt-8 mb-4 lg:max-w-xs text-3xl font-semibold font-heading text-white">
-                Making changes simple and easy
-              </h3>
-              <p className="text-base text-white leading-relaxed">
-                Etiam pellentesque non nibh non pulvinar. Mauris posuere, tellus
-                sit amet tempus vestibulum.
-              </p>
-            </div>
+        <div className="relative wrap overflow-hidden py-10 md:p-10 h-full max-w-4xl mx-auto">
+          <div
+            className="border-2-2 absolute border-opacity-100 border-yellow-600 h-full border-3 -mt-10"
+            style={{ left: "calc(50% - 2px)" }}
+          ></div>
+          <div className="mb-8 flex justify-between items-center w-full right-timeline">
+            <div className="order-1 w-5/12"></div>
+            <Dot>25%</Dot>
+            <Legend>Give away time for holders</Legend>
           </div>
-          <div className="w-full lg:w-1/2 p-4">
-            <div className="relative py-16 px-6 md:px-20 bg-gray-800">
-              <span className="absolute top-0 left-0 flex w-20 h-12 pl-6 items-center clip-path-right-top bg-yellow-500 text-2xl text-gray-800 font-bold">
-                2
-              </span>
-              <h3 className="mt-8 mb-4 text-3xl font-semibold font-heading text-white">
-                Fusce mauris ligula, tincidunt vel
-              </h3>
-              <p className="text-base text-white leading-relaxed">
-                Etiam pellentesque non nibh non pulvinar. Mauris posuere, tellus
-                sit amet tempus vestibulum.
-              </p>
-            </div>
+
+          <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div className="order-1 w-5/12"></div>
+            <Dot>50%</Dot>
+            <Legend>
+              Interview with Roland Mouron (Estate and grandson of Cassandre)
+            </Legend>
           </div>
-          <div className="w-full lg:w-1/2 p-4">
-            <div className="relative py-16 px-6 md:px-20 bg-gray-800">
-              <span className="absolute top-0 left-0 flex w-20 h-12 pl-6 items-center clip-path-right-top bg-yellow-500 text-2xl text-gray-800 font-bold">
-                3
-              </span>
-              <h3 className="mt-8 mb-4 lg:max-w-xs text-3xl font-semibold font-heading text-white">
-                Praesent non turpis arcu
-              </h3>
-              <p className="text-base text-white leading-relaxed">
-                Etiam pellentesque non nibh non pulvinar. Mauris posuere, tellus
-                sit amet tempus vestibulum.
-              </p>
-            </div>
+
+          <div className="mb-8 flex justify-between items-center w-full right-timeline">
+            <div className="order-1 w-5/12"></div>
+            <Dot>75%</Dot>
+            <Legend>Free 90cm*60cm poster for holders</Legend>
           </div>
-          <div className="w-full lg:w-1/2 p-4">
-            <div className="relative py-16 px-6 md:px-20 bg-gray-800">
-              <span className="absolute top-0 left-0 flex w-20 h-12 pl-6 items-center clip-path-right-top bg-yellow-500 text-2xl text-gray-800 font-bold">
-                4
-              </span>
-              <h3 className="mt-8 mb-4 text-3xl font-semibold font-heading text-white">
-                Nulla facilisis mollis lacus sagittis semper
-              </h3>
-              <p className="text-base text-white leading-relaxed">
-                Etiam pellentesque non nibh non pulvinar. Mauris posuere, tellus
-                sit amet tempus vestibulum.
-              </p>
-            </div>
-          </div>
-          <div className="w-full lg:w-1/2 p-4">
-            <div className="relative py-16 px-6 md:px-20 bg-gray-800">
-              <span className="absolute top-0 left-0 flex w-20 h-12 pl-6 items-center clip-path-right-top bg-yellow-500 text-2xl text-gray-800 font-bold">
-                5
-              </span>
-              <h3 className="mt-8 mb-4 text-3xl font-semibold font-heading text-white">
-                Morbi vitae leo nec libero lacinia
-              </h3>
-              <p className="text-base text-white leading-relaxed">
-                Etiam pellentesque non nibh non pulvinar. Mauris posuere, tellus
-                sit amet tempus vestibulum.
-              </p>
-            </div>
-          </div>
-          <div className="w-full lg:w-1/2 p-4">
-            <div className="relative py-16 px-6 md:px-20 bg-gray-800">
-              <span className="absolute top-0 left-0 flex w-20 h-12 pl-6 items-center clip-path-right-top bg-yellow-500 text-2xl text-gray-800 font-bold">
-                6
-              </span>
-              <h3 className="mt-8 mb-4 text-3xl font-semibold font-heading text-white">
-                Curabitur rutrum ex rutrum congue
-              </h3>
-              <p className="text-base text-white leading-relaxed">
-                Etiam pellentesque non nibh non pulvinar. Mauris posuere, tellus
-                sit amet tempus vestibulum.
-              </p>
-            </div>
+
+          <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div className="order-1 w-5/12"></div>
+            <Dot>100%</Dot>
+            <Legend>
+              Creation of the Cassandre Fundation, to organize events gathering
+              around the artist and for holders
+            </Legend>
           </div>
         </div>
       </div>
