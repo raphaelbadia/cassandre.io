@@ -1,8 +1,16 @@
+import clsx from "clsx";
 import { FC } from "react";
 
-const Section: FC = ({ children }) => {
+type SectionProps = {
+  className?: string;
+  dark?: boolean;
+};
+
+const Section: FC<SectionProps> = ({ children, className }) => {
   return (
-    <section className="relative overflow-hidden bg-gray-900">{children}</section>
+    <section className={clsx("relative overflow-hidden", className)}>
+      {children}
+    </section>
   );
 };
 

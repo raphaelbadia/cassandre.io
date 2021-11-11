@@ -4,6 +4,7 @@ import Image from "next/image";
 import AboveTheFold from "../components/AboveTheFold";
 import Navigation from "../components/Navigation";
 import Section from "../components/Section";
+import Welcome from "../components/Welcome";
 
 const Home: NextPage = () => {
   return (
@@ -16,9 +17,12 @@ const Home: NextPage = () => {
         />
       </Head>
 
-      <Section>
+      <Section className="bg-gray-900">
         <Navigation />
         <AboveTheFold />
+      </Section>
+      <Section className="py-24 bg-yellow-600">
+        <Welcome />
       </Section>
     </main>
   );

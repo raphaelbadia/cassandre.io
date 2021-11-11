@@ -1,11 +1,22 @@
 // tailwind.config.js
 
 const colors = require("tailwindcss/colors");
-console.log(colors);
+
 module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    borderWidth: {
+      DEFAULT: "1px",
+      0: "0",
+      2: "2px",
+      3: "3px",
+      4: "4px",
+      6: "6px",
+      8: "8px",
+      12: "12px",
+      16: "16px",
+    },
     extend: {
       colors: {
         ...colors,
