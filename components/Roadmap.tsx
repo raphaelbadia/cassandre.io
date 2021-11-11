@@ -52,7 +52,7 @@ const Roadmap: FC = ({ children }) => {
           <div className="mb-8 flex justify-between items-center w-full right-timeline">
             <div className="order-1 w-5/12"></div>
             <Dot>25%</Dot>
-            <Legend>Give away time for holders</Legend>
+            <Legend>Give away for holders</Legend>
           </div>
 
           <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
