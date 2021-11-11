@@ -5,13 +5,13 @@ const Welcome: FC = ({ children }) => {
   return (
     <div className="container px-4 mx-auto">
       <div className="max-w-2xl mx-auto">
-        <h2 className="mb-6 text-4xl font-bold font-heading text-gray-900">
-          Welcome to the artist&rsquo;s workshop
+        <h2 className="mb-6 text-4xl md:text-5xl font-bifur font-heading text-gray-900">
+          Welcome
         </h2>
         <p className="mb-6 text-lg text-gray-900 font-semibold">
           A series of only 300 hand drawn painting of the artist Cassandre, one
           of the most famous designer of the art deco era. Not generated, not
-          algorithm, no thousands of NFT - only hard, human work from the begin
+          algorithm, no thousands of NFTs - only human hard work from the begin
           to the end of the process.
         </p>
         <div className="relative h-112 mb-10 lg:-mx-20 xl:-mx-40  border-8 md:border-12 lg:border-16 border-black">
