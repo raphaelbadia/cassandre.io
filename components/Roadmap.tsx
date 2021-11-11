@@ -46,7 +46,7 @@ const Roadmap: FC = ({ children }) => {
         </div>
         <div className="relative wrap overflow-hidden py-10 md:p-10 h-full max-w-4xl mx-auto">
           <div
-            className="border-2-2 absolute border-opacity-100 border-yellow-600 h-full border-3 -mt-10"
+            className="border-2-2 absolute border-opacity-100 border-yellow-500 h-full border-3 -mt-10"
             style={{ left: "calc(50% - 2px)" }}
           ></div>
           <div className="mb-8 flex justify-between items-center w-full right-timeline">
