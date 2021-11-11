@@ -36,11 +36,11 @@ const AboveTheFold: FC = ({ children }) => {
                     mb-8
                     text-white text-4xl
                     lg:text-6xl
-                    font-bold
                     uppercase
+                    font-bifur
                   "
               >
-                The cassandre legacy
+                Cassandre<b>&rsquo;</b>s legacy
               </h2>
               <a
                 className="

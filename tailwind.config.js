@@ -18,6 +18,9 @@ module.exports = {
       16: "16px",
     },
     extend: {
+      fontFamily: {
+        bifur: ["bifur", "ui-serif", "Georgia"],
+      },
       colors: {
         ...colors,
         yellow: {

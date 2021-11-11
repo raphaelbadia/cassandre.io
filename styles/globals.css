@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "bifur";
+  src: url(/fonts/bifur.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "bifur";
+  src: url(/fonts/bifur.ttf);
+}
+/* 
+* {
+  font-family: "bifur" !important;
+} */
+
 .stroke {
   font-size: 30vw;
   line-height: 1;
