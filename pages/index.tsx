@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import AboveTheFold from "../components/AboveTheFold";
+import Faq from "../components/Faq";
 import Navigation from "../components/Navigation";
 import Roadmap from "../components/Roadmap";
 import Section from "../components/Section";
@@ -23,12 +24,16 @@ const Home: NextPage = () => {
         <AboveTheFold />
       </Section>
 
-      <Section className="py-24 bg-yellow-600">
+      <Section className="py-24 bg-yellow-500">
         <Welcome />
       </Section>
 
       <Section className="py-24 bg-gray-900">
         <Roadmap />
+      </Section>
+
+      <Section className="py-24 bg-gray-900">
+        <Faq />
       </Section>
     </main>
   );
