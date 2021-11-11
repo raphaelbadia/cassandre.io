@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import Image from "next/image";
 import IconBurger from "./svg/IconBurger";
 import clsx from "clsx";
+import NavigationDrawerItem from "./NavigationDrawerItem";
 
 const Navigation: FC = ({ children }) => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -156,70 +157,10 @@ const Navigation: FC = ({ children }) => {
           </div>
           <div>
             <ul>
-              <li className="mb-1">
-                <a
-                  className="
-                block
-                pl-16
-                py-5
-                font-semibold
-                text-gray-800
-                hover:bg-gray-50
-                rounded
-              "
-                  href="#"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="
-                block
-                pl-16
-                py-5
-                font-semibold
-                text-gray-800
-                hover:bg-gray-50
-                rounded
-              "
-                  href="#"
-                >
-                  The story
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="
-                block
-                pl-16
-                py-5
-                font-semibold
-                text-gray-800
-                hover:bg-gray-50
-                rounded
-              "
-                  href="#"
-                >
-                  NFTs
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="
-                block
-                pl-16
-                py-5
-                font-semibold
-                text-gray-800
-                hover:bg-gray-50
-                rounded
-              "
-                  href="#"
-                >
-                  Roadmap
-                </a>
-              </li>
+              <NavigationDrawerItem>Home</NavigationDrawerItem>
+              <NavigationDrawerItem>The story</NavigationDrawerItem>
+              <NavigationDrawerItem>NFTs</NavigationDrawerItem>
+              <NavigationDrawerItem>Roadmap</NavigationDrawerItem>
             </ul>
           </div>
           <div className="mt-auto px-10">
