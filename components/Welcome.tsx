@@ -5,7 +5,7 @@ const Welcome: FC = ({ children }) => {
   return (
     <div className="container px-4 mx-auto">
       <div className="max-w-2xl mx-auto">
-        <h2 className="mb-6 text-3xl font-bold font-heading text-gray-900">
+        <h2 className="mb-6 text-4xl font-bold font-heading text-gray-900">
           Welcome to the artist&rsquo;s workshop
         </h2>
         <p className="mb-6 text-lg text-gray-900 font-semibold">
