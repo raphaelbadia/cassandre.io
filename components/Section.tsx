@@ -1,14 +1,14 @@
 import clsx from "clsx";
-import { FC } from "react";
+import { FC, HTMLAttributes } from "react";
 
 type SectionProps = {
   className?: string;
   dark?: boolean;
-};
+} & HTMLAttributes<HTMLElement>;
 
-const Section: FC<SectionProps> = ({ children, className }) => {
+const Section: FC<SectionProps> = ({ children, className, ...rest }) => {
   return (
-    <section className={clsx("relative overflow-hidden", className)}>
+    <section className={clsx("relative overflow-hidden", className)} {...rest}>
       {children}
     </section>
   );

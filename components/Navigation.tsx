@@ -56,31 +56,31 @@ const Navigation: FC = ({ children }) => {
             <li>
               <a
                 className="text-white font-semibold hover:text-gray-50"
-                href="#"
-              >
-                The story
-              </a>
-            </li>
-            <li>
-              <a
-                className="text-white font-semibold hover:text-gray-50"
-                href="#"
-              >
-                NFTs
-              </a>
-            </li>
-            <li>
-              <a
-                className="text-white font-semibold hover:text-gray-50"
-                href="#"
+                href="#roadmap"
               >
                 Roadmap
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-white font-semibold hover:text-gray-50"
+                href="#team"
+              >
+                Team
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-white font-semibold hover:text-gray-50"
+                href="#story"
+              >
+                The story
               </a>
             </li>
           </ul>
 
           {/* LOGIN REGISTER DESKTOP */}
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <a
               className="
                   inline-block
@@ -108,7 +108,7 @@ const Navigation: FC = ({ children }) => {
             >
               Sign up
             </a>
-          </div>
+          </div> */}
         </div>
       </nav>
 

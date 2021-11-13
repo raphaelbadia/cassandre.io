@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         <Welcome />
       </Section>
 
-      <Section className="py-24 bg-gray-900">
+      <Section className="py-24 bg-gray-900" id="roadmap">
         <Roadmap />
       </Section>
 
