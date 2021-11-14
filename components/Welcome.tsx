@@ -22,6 +22,7 @@ const Welcome: FC = ({ children }) => {
             layout="responsive"
             width="1175"
             height="493"
+            priority
           />
           <span
             className="

@@ -21,6 +21,7 @@ const Navigation: FC = ({ children }) => {
               alt="Name of the artist, written with his typo &ldquo;Le Bifur&rdquo;"
               width="200"
               height="27"
+              priority
             />
           </a>
           {/* BURGER ICON FOR MOBILE */}
