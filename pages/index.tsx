@@ -4,6 +4,7 @@ import Image from "next/image";
 import AboveTheFold from "../components/AboveTheFold";
 import Faq from "../components/Faq";
 import Navigation from "../components/Navigation";
+import PostersSlider from "../components/PostersSlider";
 import Roadmap from "../components/Roadmap";
 import Section from "../components/Section";
 import Welcome from "../components/Welcome";
@@ -30,6 +31,10 @@ const Home: NextPage = () => {
 
       <Section className="py-24 bg-gray-900" id="roadmap">
         <Roadmap />
+      </Section>
+
+      <Section className="py-24 bg-yellow-500">
+        <PostersSlider />
       </Section>
 
       <Section className="py-24 bg-gray-900">

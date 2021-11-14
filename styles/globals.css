@@ -314,3 +314,7 @@ html {
     clip-path: polygon(0 0, 50% 100%, 100% 0);
   }
 }
+
+.force-400 {
+  height: 400px;
+}
