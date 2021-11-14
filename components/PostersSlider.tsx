@@ -39,7 +39,7 @@ const PostersSlider: FC = ({ children }) => {
       </div>
       <SlickSlider
         {...config}
-        className="-mx-4 md:mx-0 border-l-12 border-r-12 border-black force-400"
+        className="-mx-4 md:mx-0 border-l-12 border-r-12 border-black bg-black force-400"
       >
         {!isMobile && <SliderImage alt="Au Bûcheron" src={aubucheron} />}
         <SliderImage alt="TBD" src={casquette} />
@@ -69,7 +69,15 @@ const SliderImage: FC<{
   const computedWidth = (width * 400) / height;
   return (
     <div style={style}>
-      <Image src={src} height={400} alt={alt} width={computedWidth} {...rest} />
+      <Image
+        src={src}
+        height={400}
+        alt={alt}
+        placeholder="blur"
+        lazyBoundary="0px"
+        width={computedWidth}
+        {...rest}
+      />
     </div>
   );
 };
